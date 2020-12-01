@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		#container{
+			border-left: 1px solid #000;
+			border-top: 1px solid #000;
+			position: relative;
+			overflow: hidden;
+		}
+		#Map{
+			list-style: none;
+		}
+		#Map li{
+			border-bottom: 1px solid #000;
+			border-right: 1px solid #000;
+			float: left;
+		}
+		#person > div{
+			position: absolute;
+			top: 0px;left: 0px;
+			background-color: #0f0;
+		}
+		.snakeBody{
+			opacity: .5;
+		}
+		.food{
+			position: absolute;
+			background-color: #ff7700;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="container">
+		<ul id="Map"></ul>
+		<div id="person"></div>
+	</div>
+	<button id="start" type="button">开始游戏</button>
+	<button id="restart" type="button">重新开始</button>
+	<button id="suspend" type="button">暂停游戏</button>
+	<span id="integral">积分：</span>
+	
+	
+<script src="index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
